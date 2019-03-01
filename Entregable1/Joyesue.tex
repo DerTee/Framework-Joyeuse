@@ -30,6 +30,7 @@ Framework para crear juegos 3d cuya mec\'anica principal sean los disparos, orie
 \end{abstract}
 \newpage
 \tableofcontents
+\listoffigures
 \newpage
 \section{La organizaci\'on}
 
@@ -88,6 +89,7 @@ Ser el est\'andar global para el desarrollo de v\'ideo juegos, solicitado tanto 
 	\centering
 	\includegraphics[width=1\textwidth]{EDT}
 	\caption{Estructura de desglose de trabajo.} 
+	\label{EDT}
 	
 \end{figure}
 
@@ -112,13 +114,17 @@ juegos en vez de gastar tiempo en componentes b\'asicos comunes en la industria,
 Al cumplir la doble funci\'on de ser un software R.A.D. (Rapid Application Development) y un Framework, cubre dos campos interrelacionados de la industria que han sido descuidados a trav\'es del tiempo, en cuanto a Shooters respecta. 
 Software que funciona con los mismos principios ha quedado obsoleto y olvidado, dejando un hueco que el software existente no podr\'ia llenar debido a su nivel de complejidad.
 \newline
-Es necesario mencionar el por qu\'e de las decisiones respecto a la orientaci\'on del proyecto: los Shooters acaparar\'an m\'as de 25.9\% del  mercado americano de los v\'ideo juegos para el a\~no 2019.
+Es necesario mencionar el por qu\'e de las decisiones respecto a la orientaci\'on del proyecto: los Shooters acaparar\'an m\'as de 25.9\% del  mercado americano de los v\'ideo juegos para el a\~no 2019, seg\'un la proyecci\'on basada en la figura~\ref{fig:FORB}  y la figura~\ref{fig:STAT} de la p\'agina~\pageref{fig:STAT}.
+
 
 \begin{figure}[H]
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{Picture1}
-	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2014.} \cite{Forbes}
+	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2014.} 
+	\label{fig:FORB}
+	\cite{Forbes}
+	
 	
 \end{figure}
 
@@ -126,18 +132,23 @@ Es necesario mencionar el por qu\'e de las decisiones respecto a la orientaci\'o
 	
 	\centering
 	\includegraphics[width=0.5\textwidth]{statista-2}
-	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2017.  } \cite{Statista}
+	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2017.  } 
+	\label{fig:STAT}
+	\cite{Statista}
+	
 	
 \end{figure}
 
  Estados Unidos es el segundo mayor cosumidor a nivel global, con ingresos de \$32.7 mil millones de d\'olares, tan solo \$7.5 mil millones debajo de China. 
  El motivo para elegir al mercado am\'ericano sobre al chino, es la libertad de publicaci\'on y contenido que existe en \'este; a diferencia de China, donde los videojuegos est\'an regulados por fuertes restricciones y filtros impuestos por el gobierno.
+ %Añadir bibliografía
 
 \begin{figure}[H]
 	
 	\centering
 	\includegraphics[width=1\textwidth]{GGM2}
 	\caption{Procedencia de los ingresos anuales, 2018.  } \cite{Newzoo} 
+	\label{NWZOO}
 	
 \end{figure}
 
@@ -169,7 +180,7 @@ La API gr\'afica que utiliza DirectX11, disponible únicamente en Windows. Otorg
 
 \subsubsection{FPS Creator}
 
-Fue lanzado en 2005, con gr\'aficos DirectX9, su \'ultima actualizaci\'on fue en el 2017 a trav\'es de un mod creado por la comunidad llamado "Black Ice Mod", sin embargo, el multijugador llevaba sin soporte desde el 2016. 
+Fue lanzado en 2005, con gr\'aficos DirectX9, su \'ultima actualizaci\'on fue en el 2017 a trav\'es de un mod creado por la comunidad llamado "Black Ice Mod", sin embargo, el multijugador llevaba sin soporte desde el 2015. \cite{MP_discontinued}
 
 El motor estaba l\'imitado a un uso m\'aximo de RAM de 2GB al momento de la compilaci\'on, lo que se traduce en un m\'aximo de 5 niveles por juego.
 S\'olo disponible para Windows.
@@ -257,6 +268,7 @@ En este caso, se comparte uno de los objetivos del Framework en el \'ambito educ
 	\centering
 	\includegraphics[width=1\textwidth]{DFD}
 	\caption{Diagrama de contexto (Nivel 0).} 
+	\label{DFD0}
 	
 \end{figure}
 \begin{figure}[H]
@@ -264,6 +276,7 @@ En este caso, se comparte uno de los objetivos del Framework en el \'ambito educ
 	\centering
 	\includegraphics[width=1\textwidth]{DFD2}
 	\caption{Diagrama de Flujo de Datos, Nivel 1.} 
+	\label{DFD1}
 	
 \end{figure}
 
