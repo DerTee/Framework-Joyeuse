@@ -162,39 +162,41 @@ Como principal impacto, adem\'as del econ\'onmico, para el cual se posee un ampl
 
 \subsubsection{Entidad 3d}
 
-Creado en el 2004, tuvo un cese del desarrollo entre 2008 a 2013, para ser abandonado finalmente por el creador en 2016. La cantidad de diferentes enemigos, armas, personajes y din\'amicas es limitada. Utiliza niveles BSP (Partici\'on Binaria del Espacio), los cuales limitan el motor a crear juegos en habitaciones y pasillos y exteriores peque\~nos. 
+Creado en el 2004, tuvo un cese del desarrollo entre 2008 a 2013, para ser abandonado finalmente por el creador en 2016. \cite{e3d}. La cantidad de diferentes enemigos, armas, personajes y din\'amicas es limitada. Utiliza niveles BSP (Partici\'on Binaria del Espacio), los cuales limitan el motor a crear juegos en habitaciones y pasillos y exteriores peque\~nos.  
+ 
 
 Es incompatible con Windows 8 y presenta problemas de compatibilidad con Windows 10, ya que varios paquetes que utilizaba, como DirectPlay, dejaron de ser activados autom\'aticamente desde Windows 7. 
 
 
+
 El punto fuerte del motor es su documentaci\'on extensiva, llena de ejemplos pr\'acticos.
-Utiliza DirectX8 y OpenGL 1 para renderizar las escenas.
-Su c\'odigo es cerrado, lo que significa que jam\'as volver\'a a recibir una actualizaci\'on.
+Utiliza DirectX8 y OpenGL 1 para renderizar las escenas. \cite{e3d2}.
+Su c\'odigo es cerrado, lo que significa que jam\'as volver\'a a recibir una actualizaci\'on. \cite{e3d3}
 
 
 \subsubsection{GameGuru}
 
 El motor fue creado en el 2012 como sucesor de FPSCreator y a pesar de que el desarrollo est\'a detenido, a\'un recibe mantenimiento y contenido. 
 Utiliza LUA como lenguaje de scripts (\#20 en PYPL).
-La API gr\'afica que utiliza DirectX11, disponible únicamente en Windows. Otorga la posibilidad de usar modelos y texturas propios, vendi\'endolos tambi\'en como contenido descargable. Se encuentra disponible para ser comprado, bajo c\'odigo cerrado. \cite{game_guru}
+La API gr\'afica que utiliza DirectX11, disponible únicamente en Windows. Otorga la posibilidad de usar modelos y texturas propios, vendi\'endolos tambi\'en como contenido descargable. Se encuentra disponible para ser comprado, bajo c\'odigo cerrado. \cite{game_guru}.
 
 \subsubsection{FPS Creator}
 
-Fue lanzado en 2005, con gr\'aficos DirectX9, su \'ultima actualizaci\'on fue en el 2017 a trav\'es de un mod creado por la comunidad llamado "Black Ice Mod", sin embargo, el multijugador llevaba sin soporte desde el 2015. \cite{MP_discontinued}
+Fue lanzado en 2005, con gr\'aficos DirectX9, su \'ultima actualizaci\'on fue en el 2017 a trav\'es de un mod creado por la comunidad llamado "Black Ice Mod", sin embargo, el multijugador llevaba sin soporte desde el 2015. \cite{MP_discontinued}.
 
 El motor estaba l\'imitado a un uso m\'aximo de RAM de 2GB al momento de la compilaci\'on, lo que se traduce en un m\'aximo de 5 niveles por juego.
 S\'olo disponible para Windows.
-Actualmente su c\'odigo est\'a alojado en Github, sin una licencia especificada, lo cual deja al motor y posibles modificaciones en ambig\"uedad legal. 
+Actualmente su c\'odigo est\'a alojado en Github, sin una licencia especificada, lo cual deja al motor y posibles modificaciones en ambig\"uedad legal. \cite{FPSCReator}.
 
 
 \subsubsection{SilentWalk FPS}
 
 Creado en el 2008, recibi\'o s\'olo una actualizaci\'on antes de que parase el desarollo. El nivel de usuarios fue bajo desde siempre e incluso aunque la comunidad sigue existiendo, el sitio oficial dej\'o de tener el enlace a esta desde mayo del 2018. 
-Utiliz\'o DirectX 9 en el apartado gr\'afico, su c\'odigo permanece cerrado. 
+Utiliz\'o DirectX 9 en el apartado gr\'afico, su c\'odigo permanece cerrado. \cite{Silentwalk}.
 
 \subsubsection{Reality Factory}
 
-Fue publicado inicialmente en 2006 y recibi\'o su \'ultima actualizaci\'on en el a\~no 2014. Utiliza DirectX9 para los gr\'aficos. La estructura de niveles es BSP y utiliza Simkin como lenguaje de scripts, incluye las herramientas necesarias para crear personajes, objetos, di\'alogos y texturas, tambi\'en incluye modelos, sonidos y texturas para crear prototipos. Da la opci\'on de cambiar entre c\'amara en primera y tercera persona. De c\'odigo abierto.
+Fue publicado inicialmente en 2006 y recibi\'o su \'ultima actualizaci\'on en el a\~no 2014. Utiliza DirectX9 para los gr\'aficos. La estructura de niveles es BSP y utiliza Simkin como lenguaje de scripts, incluye las herramientas necesarias para crear personajes, objetos, di\'alogos y texturas, tambi\'en incluye modelos, sonidos y texturas para crear prototipos. \cite{features}. Da la opci\'on de cambiar entre c\'amara en primera y tercera persona. De c\'odigo abierto. \cite{overview}.
 
 
 \subsection{Patentes relacionadas}
@@ -263,6 +265,9 @@ CONSTITUCI\'ON: Un motor de juego educativo incluye una interfaz de programa de 
 En este caso, se comparte uno de los objetivos del Framework en el \'ambito educativo, sin embargo en Joyeuse se prefiere utilizar un sistema de comandos interpretados que se asemeje a la escritura de un texto o pseudo-c\'odigo, o en su defecto un sistema de programaci\'on visual a trav\'es de nodos. 
 
 \subsection{Diagrama de Flujo de Datos}
+
+Se tiene un concepto del usuario y el motor Godot como agentes externos, la tarea del Framework es comunicarlos
+
 \begin{figure}[H]
 	
 	\centering
