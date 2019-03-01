@@ -1,0 +1,49 @@
+ Gestión de Riesgos
+ Norma mexicana
+ EDT
+ Pemu
+
+[x] Preparar un a presentación
+
+
+Riesgos
+Definicion{
+Condición o envento de incertidumbre, que al ocurrir tiene un efecto positivo o negativo
+sobre al meno suno de los objetivos del proyecto.
+
+riesgo = f(probablilidad, impacto)
+
+Puede tener una o más causas y uno o más impactos
+
+Causa
+  Evento de riesgo
+    Impacto.
+}
+
+Percepción de riesgos.
+- A nivel emocional.
+- Modificaciones conducturales/emocionales
+
+Actitud hacie el Riesgo
+*Se le otroga más peso al impacto que a la probablilidad
+  Depende del nivel de entendimiento y la gestión de riesgos
+
+Gestión de riesgos:
+  Ser proactivo y no reactivo
+
+  Proactivo vs reactivo
+  Reactivo: Administración de crisis
+  Proactivo: Anticipación y planeación
+
+Norma mexicana:
+(Requisitos mínimos)
+
+Comprensión del proyecto:
+Motivación:
+Impulsar la innovación dentro de la industria de los videojuegos al permitir que cualquiera pueda desarrollar uno.
+¿Cuál es el alcance del proyecto?
+Acelerar la producción de cualquier shooter
+¿Cuáles son los resultados requeridos?
+Crear un shooter básico en poco tiempo
+¿Cuáles son sus objetivos y prioridades?
+Obtener una suite util e intuitiva
