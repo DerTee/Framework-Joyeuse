@@ -266,7 +266,7 @@ En este caso, se comparte uno de los objetivos del Framework en el \'ambito educ
 
 \subsection{Diagrama de Flujo de Datos}
 
-Se tiene un concepto del usuario y el motor Godot como agentes externos, la tarea del Framework es comunicarlos
+Se tiene un concepto del usuario y el motor Godot como agentes externos, la tarea del Framework es comunicarlos, pasando cifras, modelos, texturas y sonidos que provee el usuario como informaci\'on de compilaci\'on para Godot, empaquetando los ficheros y entregando al usuario un juego distribuible. V\'ease la figura ~\ref{DFD0}. 
 
 \begin{figure}[H]
 	
@@ -276,6 +276,16 @@ Se tiene un concepto del usuario y el motor Godot como agentes externos, la tare
 	\label{DFD0}
 	
 \end{figure}
+
+Dentro del Framework, los datos introducidos son clasificados, ya sean estos modelos, sonidos, texturas, archivos de comandos o cifras en bruto. Dependiendo de la clasificaci\'on ser\'an procesados de forma diferente: 
+\begin{itemize}
+	\item[Comandos] Son interpretados como funciones nativas del motor, que ser\'an usadas para modificar objetos o eventos dentro del juego. 
+	\item[Interacci\'on y valores] Son utilizados para crear y modificar los prefabricados y escenas del juego. 
+	\item[Sonidos, texturas y modelos] Son ordenados dentro de un directorio con varios subdirectorios y despu\'es almacenados en un fichero comprimido de formato PKG, respetando el orden de los directorios
+\end{itemize}
+Una vez procesada la informaci\'on de entrada, el Framework mandar\'a las instrucciones de compilaci\'on a Godot, el cual devolver\'a el juego compilado. 
+Dentro del Framework, se toma el programa y se adjunta al fichero PKG, d\'ando ambos al usuario para que pueda distribuir su juego. Para un ejemplo gr\'afico, v\'ease la figura~\ref{DFD1}.
+
 \begin{figure}[H]
 	
 	\centering

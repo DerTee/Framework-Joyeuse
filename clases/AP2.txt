@@ -12,8 +12,12 @@ Dimensiones:
     Tiempo que toma crear un videojuego
     Tipo de videojuego que buscan crear
     Dificultad para usar las herramientas existentes
-    
+
 
 
 
   ¿Qué tanto necesitas estas herramientas?
+
+Dimensiones y dos preguntas por dimension, minimo.
+
+Mínimo de preguntas: 10
