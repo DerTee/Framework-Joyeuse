@@ -10,14 +10,32 @@ Identificar dimensiones
 Dimensiones:
 
     Tiempo que toma crear un videojuego
+
+      Con respecto al tiempo total de desarrollo, ¿Qué fracción del tiempo toma crear componentes genéricos que podrías encontrar en otros juegos?
+
+        9/10 (Casi todo el tiempo de desarrollo) - 1/10 (Casi nada de tiempo)
+
+
     Tipo de videojuego que buscan crear
+      ¿Qué tan rápido esperas que sea un juego en primera persona?
+      Lento - Frenético
+
+    ¿Qué tanto te resulta interesante o útil las siguientes perspectivas?
+          1a 1-5
+          3a 1-5
+
     Dificultad para usar las herramientas existentes
 
-
-
-
-  ¿Qué tanto necesitas estas herramientas?
+        1-10
 
 Dimensiones y dos preguntas por dimension, minimo.
 
 Mínimo de preguntas: 10
+
+
+Factibilidad del proyecto
+
+  Analisis de Factibilidad
+    Antecedentes
+    capacidades
+    Conocimientos
