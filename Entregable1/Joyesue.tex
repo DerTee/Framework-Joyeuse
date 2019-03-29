@@ -32,6 +32,7 @@ Framework para crear juegos 3d cuya mec\'anica principal sean los disparos, orie
 \tableofcontents
 
 \newpage
+\part{Entregable 1}
 \section{La organizaci\'on}
 
 
@@ -305,6 +306,186 @@ Dentro del Framework, se toma el programa y se adjunta al fichero PKG, d\'ando a
   
 
 
+
+\newpage
+\part{Entregable 2}
+\section{Norma Mexicana}
+\subsection{Generalidades}
+\subsection{Responsabilidades}
+\subsection{Justificaci\'on del proyecto}
+Con el propósito de acelerar el desarrollo de videojuegos al permitir a los desarrolladores enfocarse en los elementos que vuelven \'unicos a sus
+juegos en vez de gastar tiempo en componentes b\'asicos comunes en la industria, adem\'as de facilitar el inicio del desarrollo y aprendizaje para aquellos con nulo conocimiento sobre el tema, ya que le permite crear videojuegos sin temor a encontrarse barreras de c\'odigo a todo aquel que lo desee, acrecentando de esta forma la innovaci\'on creativa en la industria.
+
+Al cumplir la doble funci\'on de ser un software R.A.D. (Rapid Application Development) y un Framework, cubre dos campos interrelacionados de la industria que han sido descuidados a trav\'es del tiempo, en cuanto a Shooters respecta. 
+Software que funciona con los mismos principios ha quedado obsoleto y olvidado, dejando un hueco que el software existente no podr\'ia llenar debido a su nivel de complejidad.
+
+\subsection{An\'alisis de factibilidad}
+\subsubsection{Resumen del an\'alisis}
+El proyecto consiste en la creaci\'on de un conjunto de herramientas destinadas a facilitar la creaci\'on de videojuegos, proporcionando una interfaz gr\'afica intuitiva y un lenguaje de programaci\'on de muy alto nivel, perfecto para principiantes.
+Propiciar\'a la creaci\'on de videojuegos y ofrecer\'a una introducci\'on din\'amica a la programaci\'on.
+\subsubsection{Antecedentes}
+El proyecto est\'a basado en los trabajos de FPSCreator y Entidad 3d, que permitieron crear juegos de forma r\'apida y sencilla.
+Este tipo de herramientas ha demostrado ser adaptado r\'apidamente en las comunidades de creaci\'on de videojuegos. La tecnolog\'ia actual permite la creaci\'on del conjunto de herramientas y su f\'acil mantenimiento.
+El funcionamiento de las herramientas se basa en las publicaciones de la Game Development Conference y las publicaciones de Bungie LLC.
+\subsubsection{An\'alis del entorno}
+\paragraph{Mercado}
+Los resultados del ana\'alisis de mercado han dejado en claro los porcentajes de ganancias obtenidos. 
+
+Los Shooters acaparar\'an m\'as de 25.9\% del  mercado americano de los v\'ideo juegos para el a\~no 2019, seg\'un la proyecci\'on basada en la figura~\ref{fig:FORB}  y la figura~\ref{fig:STAT} de la p\'agina~\pageref{fig:STAT}.
+
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{Picture1}
+	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2014.} 
+	\label{fig:FORB}
+	\cite{Forbes}
+	
+	
+\end{figure}
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{statista-2}
+	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2017.  } 
+	\label{fig:STAT}
+	\cite{Statista}
+	
+	
+\end{figure}
+
+Estados Unidos es el segundo mayor cosumidor a nivel global, con ingresos de \$32.7 mil millones de d\'olares, tan solo \$7.5 mil millones debajo de China, tal como puede verse en la figura \ref{NWZOO}.
+El motivo para elegir al mercado am\'ericano sobre al chino, es la libertad de publicaci\'on y contenido que existe en \'este; a diferencia de China, donde los videojuegos est\'an regulados por fuertes restricciones y filtros impuestos por el gobierno. \cite{china1}.
+%Añadir bibliografía
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=1\textwidth]{GGM2}
+	\caption{Procedencia de los ingresos anuales, 2018.  } \cite{Newzoo} 
+	\label{NWZOO}
+	
+\end{figure}
+
+Considerando los puntos anteriores, es posible calcular una estimaci\'on de ingresos para los shooters en el a\~no 2019:
+Con un 1.4\% de crecimiento anual para shooters, lo cual le dejar\'ia un 28.7\% del mercado, que lograr\'a ingresos de 155.827 mil millones de d\'olares, considerando que 35.97 MMDD provendr\'an de Am\'erica del Norte se estiman m\'as de 10.32 MMDD de d\'olares en ganancias para shooters en este 2019. 
+\paragraph{Competencia}
+A pesar de que la competencia directa es casi inexistente, est\'an presentes otros tipos de competencia, como la competencia de los motores base. Consid\'erese que la tecnolog\'ia base de este proyecto es Godot Engine.
+
+Por un lado es importante destacar que Godot Engine es el motor con mejor percecpi\'on entre sus usuarios, es decir, quienes lo usan est\'an muy satisfechos con las prestaciones del mismo, esto puede notarse en la figura \ref{SLANT}.
+ 
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=1\textwidth]{Ranking}
+	\caption{Ranking de opini\'on de usuarios.  } \cite{Slant} 
+	\label{SLANT}
+	
+\end{figure}
+
+Sin embargo, el motor m\'as utilizado a nivel global es Unity, el cual tiene una gran cantidad de usuarios y una tasa de crecimiento considerable, podemos ver un aumento de m\'as de mil usuarios entre 2018 y 2019, como se nota en las figuras \ref{GGJ2018} y  \ref{GGJ2019}. Consid\'ere a los usuarios como clientes potenciales. Esta es una diferencia que buscamos sobrepasar, ya que la percepci\'on de Unity ante sus usuarios no es excelente, adem\'as de haber alejado a varios desarrolladores desp\'ues de un conflicto de inter\'es con Improbable \cite{Improbable}. 
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{GGJ}
+	\caption{Juegos creados en el Global Game Jam 2018} \cite{GGJ2018} 
+	\label{GGJ2018}
+	
+\end{figure}
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{GGJ2019}
+	\caption{Juegos creados en el Global Game Jam 2019} \cite{GGJ2019} 
+	\label{GGJ2019}
+	
+\end{figure}
+
+\subsubsection{Estudio del estado de la t\'ecnica}
+
+\paragraph{Patentes concedidas}
+\begin{itemize}
+	\item Game production tool supporting multi platform using game development tool. \cite{multip}
+	\item Visual game level editing method and system based on trigger. \cite{leveledit}
+	\item Server synchronization graph handle tools. \cite{Server}
+	\item Tool for video game application development. \cite{EA}
+	\item Educational game engine capable of directly developing and combining content. \cite{Edu}
+\end{itemize}
+
+
+\paragraph{Art\'iculos y publicaciones}
+Respecto al funcionamiento e implementaci\'on de la tecnolog\'ia, nos hemos basado en diferentes publicaciones: 
+\begin{itemize}
+	\item ''Evolving Halo's Behaviour Tree AI'' por Max Dyckhoff, para el editor de comportamientos de la IA. \cite{Bungie}
+	\item ''What do game developers expect from development and design tools?'' por Jussi Kasurinen, Jukka-Pekka Strand\'en y Kari Smolander, para la flexibilidad y el flujo de trabajo. \cite{ACM}
+\end{itemize}
+\paragraph{Tecnolog\'ias Disponibles}
+La tecnolog\'ia disponible podr\'ia ser clasificada en tecnolog\'ias en bruto y compuestas. En las tecnolog\'ias en bruto est\'an aquellas que no han sido implementadas, es decir, son bibliotecas y APIs de desarrollo: 
+\begin{itemize}
+	\item OpenGL
+	\item Vulkan
+	\item DirectX
+	\item OpenXR
+	\item MotionLeap
+	\item OculusVR
+	\item SteamVR
+	\item SimplexNoise
+\end{itemize}
+En las tecnolog\'ias compuestas se encuentran los motores de videojuegos, los cuales impementan las tecnolog\'ias en bruto y proveen una integraci\'on \'util.
+Como por ejemplo: 
+\begin{itemize}
+	\item Unity
+	\item Unreal Engine 4
+	\item Godot Engine
+	\item Panda3d
+	\item Xenko
+	\item Armory3D
+	\item CryEngine
+	\item Lumberyard
+\end{itemize}
+
+\paragraph{Productos en el mercado}
+Los productos en el mercado que compiten directamente con el Framework son: 
+\begin{itemize}
+	\item Entidad 3d
+	\item GameGuru
+	\item Silentwalk FPS 
+	\item FPS Creator
+	\item Reality Factory
+	
+\end{itemize}
+Sin embargo, estos est\'an desactualizados o abandonados, con excepci\'on de GameGuru, que est\'a gr\'aficamente rezagado pero es vigente en el mercado. 
+
+\subsubsection{Programa general de trabajo}
+
+\subsubsection{Determinaci\'on de recursos}
+\subsubsection{Aportaci\'on del proyecto}
+
+\subsection{Desarrollo del proyecto}
+\subsubsection{Generalidades}
+\subsubsection{Planificaci\'on de la secuencia}
+\subsubsection{Estructura organizativa y personal participante}
+\subsubsection{Interrelaci\'on de tareas}
+
+\subsection{Presupuesto}
+\subsubsection{Recursos asignados}
+\subsubsection{Desglose de costos}
+
+\subsection{Control de programa de proyecto}
+\subsubsection{Identificaci\'on de riesgos}
+\subsubsection{Gesti\'on de cambios}
+\subsubsection{Medici\'on de avances}
+
+\subsection{Protecci\'on del proyecto}
+
+\section{Encuesta}
+\subsection{Tiempo de desarrollo}
+\subsection{Tipo de proyecto}
+\subsection{Facilidad de uso}
 
 \newpage
 \bibliography{Joyeuse}
