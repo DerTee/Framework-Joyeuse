@@ -536,7 +536,7 @@ En la figura \ref{rel} se muestra a detalle las tareas que deber\'an realizarse,
 \end{figure} 
 \subsection{Presupuesto}
 \subsubsection{Recursos asignados}
-Como recursos humanos se consideraran a Kevin Pe\~a Mora, Jos\'e Vald\'ez y Yael Atletl. En el aspecto financiero, se aproximan 
+Como recursos humanos se consideraran a Kevin Pe\~na Mora, Jos\'e Vald\'ez y Yael Atletl. En el aspecto financiero, se aproximan 
 Para el \'ambito t\'ecnico se utilizar\'an Godot, Github, Sphinx, TravisCI y Read The Docs.
 
 \subsubsection{Desglose de costos}
@@ -545,12 +545,31 @@ Considerar el sueldo para el periodo del proyecto para una cuarta persona en cas
 
 \subsection{Control de programa de proyecto} %
 \subsubsection{Identificaci\'on de riesgos}
+Se identificaron y categorizaron varios riesgos, mostrados en la figura \ref{ries}.
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\textwidth]{RBS}
+	\caption{Catergor\'ias de riesgos.} 
+	\label{ries}
+\end{figure}
+Se expande en la identificaci\'on de riesgos, utilizando un diagrama tipo espina de pescado, tal como en la figura \ref{pescado}; de esta forma se facilita la identificaci\'on y la soluci\'on o prevenci\'on de estos. 
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\textwidth]{Espina}
+	\caption{Catergor\'ias de riesgos, con riesgos detallados.} 
+	\label{pescado}
+\end{figure}
+
+En caso de que los riesgos se presenten y se necesite aplicar una estrat\'egia de soluci\'on, se consiederar\'a un cambio en las estrat\'egias de prevenci\'on, ya que \'estas habr\'an probado ser insuficientes. 
 
 \subsubsection{Gesti\'on de cambios}
+Mediante reuniones semanales se identifican los cambios necesarios para el desarrollo del proyecto, basados en los avances actuales y los riesgos que se puedan presentar. Es importante ponderar la posibilidad de que uno de estos riesgos y su impacto en el desarrollo, para de esta forma priorizar aquellos con mayor impacto en el proyecto, en funci\'on de su probabilidad de suceder.
+Los cambios y observaciones se registran en las minutas de cada reuni\'on.   
+
 \subsubsection{Medici\'on de avances}
 
-Llevando a cabo un an\'alisis profundo a las diversas actividades que se han entregado con anterioridad nos hemos dado cuenta que todo se ha realizado en tiempo y forma, sin retraso de ning\'un tipo, haciendo modificaciones continuamente que nos beneficien en la entrega de las próximas actividades sin retraso, caracterizándose por siempre tener una excelente calidad en nuestras diferentes modalidades, para así poder mantener a nuestros tipos de clientes satisfechos con nuestros servicios. 
-Por otro lado ofreciendo garantías que aseguren el funcionamiento de estos, siempre y cuando nuestras normativas no sean violadas. 
+La documentaci\'on del proyecto se divir\'a en 3 entregables, cada uno desde una perspectiva diferente, a medida que se realizan las las actividades de desarrollo como tal, registradas en un log de github y medidas a trav\'es de Milestones (Hitos), que determinar\'an el avance real del proyecto, cada Milestone est\'a contemplado para mes y medio o dos meses de desarrollo, que se alcance o no uno de estos, indicar\'a las estrategias, personal y medidas de prevenci\'on que deber\'an cambiarse o mantenerse. 
+
 
 
 \subsection{Protecci\'on del proyecto}
@@ -584,6 +603,14 @@ Los apartados que toman mayor tiempo de desarrollo son los elementos gen\'ericos
 Los resultados apuntan a que el estilo de juego preferido por los desarrolladores es un shooter r\'apido, poco estrat\'egico, en primera o tercera persona y de un s\'olo jugador donde se enfrenten a grandes cantidades de enemigos. 
 \subsection{Facilidad de uso}
 La preferencia es hacia un sistema visual separado de Godot, contenido en un solo ejecutable, el cual recibir\'ia un uso frecuente de tener un editor de personajes. 
+\section{Aplicaci\'on de metodolog\'ias \'agiles}
+\subsection{Documentaci\'on}
+
+En este caso se utiliza SCRUM, se documentan semanalmente los progresos en el proyecto y se planea el trabajo de la siguiente semana, utilizando minutas tanto para plantear el progreso del desarrollo como el estado de la documentaci\'on. De esta forma se establecen las tareas de la iteraci\'on,s e revisa el progreso y se discuten los retrasos.
+
+\subsection{Desarrollo}
+
+Se utilizar\'a XP (Extreme Programming). Empleando integraci\'on continua se entregan builds preliminares a los usuarios cada d\'ia y se realizan pruebas unitarias. Esto facilita que con Github se les otorgue a los usuarios la capacidad de reportar errores y solicitar caracter\'isticas (se incluye al cliente en el desarrollo), de esta forma se evitan las regresiones y se asegura una entrega de calidad. Despu\'es de cada cierta cantidad de iteraciones se realiza una entrega estable. 
 
 \newpage
 \bibliography{Joyeuse}
