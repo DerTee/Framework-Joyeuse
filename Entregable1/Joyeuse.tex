@@ -308,7 +308,7 @@ Dentro del Framework, se toma el programa y se adjunta al fichero PKG, d\'ando a
 
 
 \newpage
-\part{Entregable 2}
+\part{Entregable 2 (NOM)}
 \section{Norma Mexicana}
 \subsection{Generalidades}
 Framework para crear juegos 3d cuya mec\'anica principal sean los disparos, orientado al rango desde desarrolladores reci\'en iniciados o por iniciarse en el \'ambito, hasta aquellos con conocimiento avanzado. Se compone de una serie de editores entre los cuales se encuentran:
@@ -611,7 +611,334 @@ En este caso se utiliza SCRUM, se documentan semanalmente los progresos en el pr
 \subsection{Desarrollo}
 
 Se utilizar\'a XP (Extreme Programming). Empleando integraci\'on continua se entregan builds preliminares a los usuarios cada d\'ia y se realizan pruebas unitarias. Esto facilita que con Github se les otorgue a los usuarios la capacidad de reportar errores y solicitar caracter\'isticas (se incluye al cliente en el desarrollo), de esta forma se evitan las regresiones y se asegura una entrega de calidad. Despu\'es de cada cierta cantidad de iteraciones se realiza una entrega estable. 
+\part{Entregable 3 (PMBOK)}
+\section{Introducci\'on}
+Framework para crear juegos 3d cuya mec\'anica principal sean los disparos, orientado al rango desde desarrolladores reci\'en iniciados o por iniciarse en el \'ambito, hasta aquellos con conocimiento avanzado. Se compone de una serie de editores entre los cuales se encuentran:
+\begin{itemize}
+	\item Personajes: Usando una interf\'az simple que permita unificar Inteligencia Artificial, Modelos, animaciones y sonidos. 
+	\item Inteligencia Artificial: Mediante un \'arbol de comportamiento.
+	\item Niveles: Interf\'az que permita dise\~nar niveles estilo BSP utilizando CSG, evitando as\'i los inconvenientes del alg\'oritmo BSP, pero manteniendo la facilidad de dise\~no que provee. 
+	\item Scripts: Mediante un editor ASCII o visual, a elecci\'on del usuario, con la posibilidad de combinar ambos tipos de scripts. 
+\end{itemize}	
+Al cumplir la doble funci\'on de ser un software R.A.D. (Rapid Application Development) y un Framework, cubre dos campos interrelacionados de la industria que han sido descuidados como conjunto a trav\'es del tiempo, en cuanto a Shooters respecta. 
+Software que funciona con los mismos principios ha quedado obsoleto y olvidado, dejando un hueco que el software existente no podr\'ia llenar debido a su nivel de complejidad.
 
+
+
+\section{Ciclo de vida del proyecto y la organizaci\'on}
+
+Tanto el proyecto como la organizaci\'on tienen un ciclo de vida con iteraciones indeterminadas, cada una siguiendo la estructura l\'ogica de inicio, organizaci\'on y preparaci\'on, ejecuci\'on y cierre, siendo estos determinados como:
+\begin{itemize}
+	\item[Inicio] Se eval\'ua la situaci\'on actual de las herramientas, la tecnolog\'ia y el mercado. 
+	\item[Organizaci\'on y preparaci\'on] Se seleccionan las caracter\'isticas a cambiar o añadir, las herramientas a crear y se elabora un plan de trabajo con metas definidas. 
+	\item[Ejecuci\'on] Se ejecuta el trabajo de acuerdo al plan, llevando el seguimiento de las actividades completadas. 
+	\item[Cierre] Se alcanza la "milestone" del ciclo, entregando una versi\'on estable. Se prepara para la siguiente iteraci\'on. 
+	%Añadir el diagrama 
+\end{itemize}
+
+\section{Gesti\'on de la integraci\'on del proyecto}
+\subsection{Acta de constituci\'on del proyecto}
+\subsubsection{Prop\'osito y justificaci\'on}
+Con el prop\'osito de acelerar el desarrollo de videojuegos al permitir a los desarrolladores enfocarse en los elementos que vuelven \'unicos a sus
+juegos en vez de gastar tiempo en componentes b\'asicos comunes en la industria, adem\'as de facilitar el inicio del desarrollo y aprendizaje para aquellos con nulo conocimiento sobre el tema, ya que le permite crear videojuegos sin temor a encontrarse barreras de c\'odigo a todo aquel que lo desee, acrecentando de esta forma la innovaci\'on creativa en la industria.
+Los resultados del ana\'alisis de mercado han dejado en claro los porcentajes de ganancias obtenidos. 
+
+Los Shooters acaparar\'an m\'as de 25.9\% del  mercado americano de los v\'ideo juegos para el a\~no 2019, seg\'un la proyecci\'on basada en la figura~\ref{FORB2}  y la figura~\ref{STAT2} de la p\'agina~\pageref{STAT2}.
+
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{Picture1}
+	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2014.} 
+	\label{FORB2}
+	\cite{Forbes}
+	
+	
+\end{figure}
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=0.5\textwidth]{statista-2}
+	\caption{Cuota de mercado, por g\'enero, porcentajes del a\~no 2017.  } 
+	\label{STAT2}
+	\cite{Statista}
+	
+	
+\end{figure}
+
+Estados Unidos es el segundo mayor cosumidor a nivel global, con ingresos de \$32.7 mil millones de d\'olares, tan solo \$7.5 mil millones debajo de China, tal como puede verse en la figura \ref{ENWZOO2}.
+El motivo para elegir al mercado am\'ericano sobre al chino, es la libertad de publicaci\'on y contenido que existe en \'este; a diferencia de China, donde los videojuegos est\'an regulados por fuertes restricciones y filtros impuestos por el gobierno. \cite{china1}.
+%Añadir bibliografía
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=1\textwidth]{GGM2}
+	\caption{Procedencia de los ingresos anuales, 2018.  } \cite{Newzoo} 
+	\label{ENWZOO2}
+	
+\end{figure}
+
+Considerando los puntos anteriores, es posible calcular una estimaci\'on de ingresos para los shooters en el a\~no 2019:
+Con un 1.4\% de crecimiento anual para shooters, lo cual le dejar\'ia un 28.7\% del mercado, que lograr\'a ingresos de 155.827 mil millones de d\'olares, considerando que 35.97 MMDD provendr\'an de Am\'erica del Norte se estiman m\'as de 10.32 MMDD de d\'olares en ganancias para shooters en este 2019. 
+\paragraph{Competencia}
+A pesar de que la competencia directa es casi inexistente, est\'an presentes otros tipos de competencia, como la competencia de los motores base. Consid\'erese que la tecnolog\'ia base de este proyecto es Godot Engine.
+
+Por un lado es importante destacar que Godot Engine es el motor con mejor percecpi\'on entre sus usuarios, es decir, quienes lo usan est\'an muy satisfechos con las prestaciones del mismo, esto puede notarse en la figura \ref{SLANT2}.
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=1\textwidth]{Ranking}
+	\caption{Ranking de opini\'on de usuarios.  } \cite{Slant} 
+	\label{SLANT2}
+	
+\end{figure}
+
+Sin embargo, el motor m\'as utilizado a nivel global es Unity, el cual tiene una gran cantidad de usuarios y una tasa de crecimiento considerable, podemos ver un aumento de m\'as de mil usuarios entre 2018 y 2019, como se nota en las figuras \ref{GGJ2018} y  \ref{GGJ2019}. Consid\'ere a los usuarios como clientes potenciales. Esta es una diferencia que buscamos sobrepasar, ya que la percepci\'on de Unity ante sus usuarios no es excelente, adem\'as de haber alejado a varios desarrolladores desp\'ues de un conflicto de inter\'es con Improbable \cite{Improbable}. 
+
+\subsubsection{Objetivos y criterios de \'exito}
+Las metas de trabajo se han dividido en dos entregables, la documentaci\'on y las herramientas. De parte de la documentaci\'on, se redactar\'an tutoriales y ejemplos, que ser\'an alojados en un sitio web. \newline
+En el caso de las herramientas, se dividen en tres componentes b\'asicos, la interfaz para comunicar al usuario con el motor, los prefabricados que conformar\'an la base del juego y las bibliotecas que permiten el funcionamiento de los prefabricados y la interfaz. V\'ease la figura~\ref{EDT4}
+
+\subsubsection{Requisitos de alto nivel}
+Se requiere una interf\'az intuitiva y que no presente una sobrecarga visual, adem\'as de soporte nativo de las plataformas m\'as importantes actualmente, como lo son Windows, Linux, Mac, iOS, Android, Xbox, PlayStation y Switch.
+Seg\'un las encuestas realizadas a los stakeholders, los prefabricados que ayuden a crear un juego desenfrenado, centrado en la historia y en disparar a muchos enemigos son los que presentan mayor utilidad. 
+La metodolog\'ia que se determin\'o utilizar para documentar el proyecto es SCRUM, con un ritmo lento para los principales puntos de la documentaci\'on, mientras que para el desarrollo se ha decidido optar por Extreme Programming, aprovechando la integraci\'on contiunua ofrecida por TravisCI para proveer versiones de desarrollo diarias a nuestros usuarios, teniendo entregas estables cada que se determine que se ha alcanzado una milestone significativa. 
+\subsubsection{Descripci\'on de alto nivel}
+Framework para crear juegos 3d cuya mec\'anica principal sean los disparos, orientado al rango desde desarrolladores reci\'en iniciados o por iniciarse en el \'ambito, hasta aquellos con conocimiento avanzado. Se compone de una serie de editores entre los cuales se encuentran:
+\begin{itemize}
+	\item Personajes: Usando una interf\'az simple que permita unificar Inteligencia Artificial, Modelos, animaciones y sonidos. 
+	\item Inteligencia Artificial: Mediante un \'arbol de comportamiento.
+	\item Niveles: Interf\'az que permita dise\~nar niveles estilo BSP utilizando CSG, evitando as\'i los inconvenientes del alg\'oritmo BSP, pero manteniendo la facilidad de dise\~no que provee. 
+	\item Scripts: Mediante un editor ASCII o visual, a elecci\'on del usuario, con la posibilidad de combinar ambos tipos de scripts. 
+\end{itemize}	
+Al cumplir la doble funci\'on de ser un software R.A.D. (Rapid Application Development) y un Framework, cubre dos campos interrelacionados de la industria que han sido descuidados como conjunto a trav\'es del tiempo, en cuanto a Shooters respecta. 
+Software que funciona con los mismos principios ha quedado obsoleto y olvidado, dejando un hueco que el software existente no podr\'ia llenar debido a su nivel de complejidad.
+
+\subsubsection{Premisas y restricciones}
+Se tiene en consideraci\'on un equipo de un m\'inimio de 3 personas, esperando que la naturaleza de c\'odigo abierto del proyecto atraiga m\'as desarrolladores. Se tiene un l\'imte de 6 meses a partir del comienzo del desarrollo para terminar la primera iteraci\'on del proyecto. 
+\subsubsection{Riesgos iniciales de alto nivel}
+Se identificaron y categorizaron varios riesgos, mostrados en la figura \ref{ries2}.
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\textwidth]{RBS}
+	\caption{Catergor\'ias de riesgos.} 
+	\label{ries2}
+\end{figure}
+Se expande en la identificaci\'on de riesgos, utilizando un diagrama tipo espina de pescado, tal como en la figura \ref{pescado2}; de esta forma se facilita la identificaci\'on y la soluci\'on o prevenci\'on de estos. Se categorizan en este caso en la ra\'iz de cada uno de estos riesgos. 
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\textwidth]{Espina}
+	\caption{Catergor\'ias de riesgos, con riesgos detallados.} 
+	\label{pescado2}
+\end{figure}
+
+En caso de que los riesgos se presenten y se necesite aplicar una estrat\'egia de soluci\'on, se consiederar\'a un cambio en las estrat\'egias de prevenci\'on, ya que \'estas habr\'an probado ser insuficientes. 
+
+\subsubsection{Cronograma de los Hitos}
+Se espera completar varios hitos en el orden siguiente, con fechas tentativas a verificar al comenzar el desarrollo. 
+\begin{itemize}
+	\item[10/05/19] Inicio del desarrollo
+	\item[20/07/19] Primera beta y difusi\'on del proyecto
+	\item[25/10/19] Primera entrega estable
+\end{itemize}
+\subsubsection{Presupuesto inicial asignado}
+Se asigna en este caso un presupuesto de \$31,710 para los primeros seis meses de desarrollo, en caso de una entrega exitosa, el presupuesto podr\'a ser aumentado en funci\'on de la factibilidad y las utilidades de la organizaci\'on. 
+\subsubsection{Stakeholders}
+Actualmente los mayores stakeholders son los desarrolladores independientes de videojuegos, siendo en su mayor\'ia usuarios de Godot y ex-usuarios de Entidad 3d. Se tiene conocimiento de que el estudio Rise Robot Rise ha mostrado inter\'es en el proyecto. 
+\subsubsection{Requisitos de aprobaci\'on del proyecto}
+Se considera exitoso en caso de que este sea completado en el marco de tiempo establecido y que logre despertar inter\'es en la comunidad de desarrolladores, adem\'as de que presente interesados en la versi\'on comercial. 
+Esto ser\'a decidido por los integrantes del equipo de desarrollo y el administrador del proyecto; y verificado por los stakeholders principales, siendo estos Rise Robot Rise. 
+
+\subsubsection{Director del proyecto}
+El director del proyecto ser\'a el ciudadano Yael Atletl Bueno Rojas, de quien ser\'a la responsabilidad de procurar el \'exito del proyecto, su gesti\'on y su alcance. Tendr\'a autoridad para hacer cambios dentro de lo que el proyecto respecta, sin modificar el personal asignado, pudiendo modificar las tareas asignadas. 
+\section{Gesti\'on del alcance}
+\subsection{Requisitos}
+Como parte de una exitosa ejecuci\'on se verifica la existencia de los siguientes requisitos: 
+\begin{itemize}
+ \item Interfaz intuitiva y simple. 
+ \item Compatibilidad con m\'ultiples plataformas. 
+ \item Facilidad de uso e integraci\'on con el motor original. 
+ \item Estabilidad de la aplicaci\'on, manejar internamente todos los errores. 
+ 
+\end{itemize}
+\subsection{Alcance}
+\subsubsection{Alcance del producto}
+Los editores a ser entregados ser\'an capaces de ser utilizados individualmente, sin depender uno del otro, propiciando as\'i su uso fuera del contexto del framework, esto es, permitir\'a su uso como herramienta dentro de otros sistemas o como material educativo. Su alcance sin embargo no va m\'as all\'a de la educaci\'on y el desarrollo o modificaci\'on de videojuegos.
+\subsubsection{Criterios de aceptaci\'on}
+Se verificar\'an los requisitos internamente, tambi\'en ser\'an verificados por los stakeholders representativos, los cuales entregar\'an una lista con observaciones de ser necesario, para as\'i corregir cualquier inconveniente, mientras este quede dentro de los t\'erminos del alcance. 
+\subsubsection{Entregables}
+Los entregables en s\'i, se pueden clasificar en documentaci\'on y herramientas, estos mismos ser\'ian:
+\begin{itemize}
+\item Documentaci\'on
+\begin{itemize}
+	\item Tutoriales
+	\item Manual t\'ecnico
+	\item Ejemplos pr\'acticos
+\end{itemize}
+\item Herramientas
+\begin{itemize}
+	\item Editor de personajes
+	\item Editor de objetos
+	\item Editor de niveles
+	\item Editor de efectos especiales
+\end{itemize}
+\end{itemize} 
+\subsubsection{Exclusiones}
+Lo que no se busca hacer y por lo tanto queda fuera del alcance es: 
+\begin{itemize}
+	\item Implementar mejores gr\'aficos
+	\item Modificar el motor original
+	\item Proveer una herramienta multiprop\'ositos
+\end{itemize}
+\subsubsection{Restricciones}
+Por parte del presupuesto, se puede esperar una limitaci\'on en el trabajo que se realice, ya que se necesitar\'ia m\'as tiempo para compensar la falta de personal. 
+\subsubsection{Supuestos}
+Para el proyecto, se ha partido de los siguientes supuestos:
+\begin{itemize}
+	\item El mercado se ha quedado sin RADs de desarrollo de shooters actualizados. De ser falso, competir\'iamos en un mercado peque\~no.
+	\item Las herramientas podr\'ian ser aprovechadas m\'as all\'a del desarrollo r\'apido. Esto depende de los usuarios y su creatividad.
+	\item El motor Godot Engine seguir\'a mejorando. En caso de que sea abandonado, al ser c\'odigo libre podr\'iamos retomar el desarrollo. 
+
+\end{itemize}
+\subsection{Estructura de desglose de trabajo}
+
+
+El trabajo se ha dividido en dos entregables, la documentaci\'on y las herramientas. De parte de la documentaci\'on, se redactar\'an tutoriales y ejemplos, que ser\'an alojados en un sitio web. \newline
+En el caso de las herramientas, se dividen en tres componentes b\'asicos, la interfaz para comunicar al usuario con el motor, los prefabricados que conformar\'an la base del juego y las bibliotecas que permiten el funcionamiento de los prefabricados y la interfaz. V\'ease la figura~\ref{EDT4}
+
+\begin{figure}[H]
+	
+	\centering
+	\includegraphics[width=1\textwidth]{EDT}
+	\caption{Estructura de desglose de trabajo.} 
+	\label{EDT4}
+	
+\end{figure}
+
+\section{La Gesti\'on del Tiempo del Proyecto}
+Incluye los procesos requeridos para administrar la
+finalizaci\'on del proyecto a tiempo. El Gr\'afico 6-1 proporciona un panorama general de los procesos de Gesti\'on del Tiempo del Proyecto, a saber:
+\subsection{ Definir las Actividades}
+—Es el proceso que consiste en identificar las acciones
+espec\'ificas a ser realizadas para elaborar los entregables del proyecto.
+Objetivos principales:
+\begin{itemize}
+\item	Escribir la documentaci\'on
+\begin{itemize}
+	\item	Redactar y compilar con Sphinx
+	\item 	Subir al sitio de ReadTheDocs
+\end{itemize}
+\item	Crear las herramientas
+\begin{itemize}
+\item	Desarrollar las bibliotecas
+\item	Integrar los prefabricados
+\item	Proveer una interfaz
+\end{itemize}
+\end{itemize}
+
+
+
+\subsection{Secuenciar las Actividades}
+Es el proceso que consiste en identificar y documentar las interrelaciones entre las actividades del proyecto.
+Las actividades, para este caso son: 
+\begin{itemize}
+\item Establecer Integraci\'on continua
+\item	Programar funciones
+\item	Dise\~no de Interfaz
+\item	Programar elementos
+\item	Integrar bibliotecas
+\item	Usar bibiliotecas
+\item	Portar a c++
+\item	Escribir comentarios
+\item	Interpretar comentarios
+\item	Escribir tutoriales
+\item	Establecer repositorio
+\item	Distribuir con ReadTheDocs
+\item	Compilar con sphinx
+\item	Escribir ejemplos
+\end{itemize}
+Mientras que la interrelaci\'on entre estas se puede observar en la figura \ref{EEDDTT}.
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\textwidth]{EDT2}
+	\caption{Detalles de la secuencia de actividades y su interrelaci\'on.} 
+	\label{EEDDTT}
+\end{figure}
+\subsubsection{Estimar los Recursos de las Actividades} Es el proceso que consiste en estimar el
+tipo y las cantidades de materiales, personas, equipos o suministros requeridos para
+ejecutar cada actividad.
+Recursos asignados al proyecto:
+
+\begin{itemize}
+\item Humanos
+\begin{itemize}
+\item	Jos\'e \'angel Vald\'es Torres
+\item	Kevin Pe\~na Mora
+\item	Yael Atletl Bueno Rojas
+\end{itemize}
+\item	Tecnol\'ogicos
+
+\begin{itemize}
+\item	Laptop x3
+\item	Godot Engine
+\item	Github
+\item	ReadTheDocs
+\item	Sphinx
+\end{itemize} 
+\item	Financieros
+\begin{itemize}
+\item	 \$31,710 para 6 meses de desarrollo.
+\end{itemize}
+\end{itemize}
+
+Los recursos asignados en las actividades se pueden ver en la figura \ref{ASG}.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\textwidth]{actividades_asignadas}
+	\caption{Asignaci\'on de los recursos humanos a las diversas actividades.} 
+	\label{ASG}
+\end{figure}
+\subsection{Estimar la Duraci\'on de las Actividades} 
+Es el proceso que consiste en establecer
+aproximadamente la cantidad de per\'iodos de trabajo necesarios para finalizar cada
+actividad con los recursos estimados.
+
+\subsection{Desarrollar el Cronograma}
+Es el proceso que consiste en analizar la secuencia de
+las actividades, su duraci\'on, los requisitos de recursos y las restricciones del
+cronograma para crear el cronograma del proyecto.
+
+\subsection{Controlar el Cronograma}
+Es el proceso por el que se da seguimiento al estado del
+proyecto para actualizar el avance del mismo y gestionar cambios a la l\'inea base del
+cronograma.
+\section{Gesti\'on de costos de proyectos}
+presupuestar y controlar los costos de modo que se complete el proyecto dentro del presupuesto
+aprobado. El Gr\'afico 7-1 brinda una descripci\'on general de los procesos de la gesti\'on de los
+costos del proyecto, a saber:
+\subsection{Estimar los Costos}
+Es el proceso que consiste en desarrollar una aproximaci\'on de los recursos financieros necesarios para completar las actividades del proyecto.
+La aproximaci\'on ha sido de \$31,000.
+\subsection{Determinar el Presupuesto}
+Es el proceso que consiste en sumar los costos estimados de actividades individuales o paquetes de trabajo para establecer una l\'inea base de costo autorizada.
+Al final, despu\'es de manejar los costos, se ha determinado la siguiente distribuci\'on del presupuesto:
+\begin{table}[H]
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		Gastos        & Yael    & José    & Kevin   & Organización \\ \hline
+		De vida       & \$615   & \$615   & \$615   &              \\ \hline
+		Electricidad  & \$100   & \$100   & \$100   & \$240        \\ \hline
+		Pago          & \$500   & \$500   & \$500   &              \\ \hline
+		Mantenimiento & \$300   & \$300   & \$300   & \$500        \\ \hline
+		Total         & \$1,515 & \$1,515 & \$1,515 & \$740        \\ \hline
+	\end{tabular}
+\end{table}
+Y se han aprobado \$31,710 MXN para 6 meses de desarrollo.
 \newpage
 \bibliography{Joyeuse}
 \bibliographystyle{APA}
